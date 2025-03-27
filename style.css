@@ -77,15 +77,15 @@ nav {
 }
 
 .about {
-    height: 530px
+    height: 550px
 }
 
 .contact {
-    height: 530px
+    height: 605px
 }
 
 .skills {
-    height: 530px;
+    height: 660px;
 }
 
 @keyframes fadeIn {
