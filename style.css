@@ -1,98 +1,97 @@
 * {
-    max-width: 300px;
+    max-width: 360px;
 }
-    body {
-        margin: 0%;
-        padding: 0%;
-        background-color: powderblue;
-    }
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: powderblue;
+}
     
-    header {
-        font-size: 20px;
-        text-align: center;
-        background-color: rgb(173, 173, 173);
-        padding: 5px 10px;
-        animation: fadeIn 1.5s ease-in-out forwards;
+header {
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(173, 173, 173);
+    padding: 5px 10px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+nav {
+    font-size: 18px;
+    background-color: rgb(173, 173, 173);
+    padding: 5px 10px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.home {
+    display: grid;
+    height: 600px;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+.home h1 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(88, 88, 247);
+}
+
+.home p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.home button {
+    font-size: 15px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background-color: white;
+    transition: all 0.4 ease;
+    width: 300px;
+}
+
+.about h1, .contact h1, .skills h1 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(88, 88, 247);
+}
+
+.about ul li, .contact p, .skills p {
+    font-size: 18px;
+    margin-left: 5%;
+    animation: slideIn 1s;
+    line-height: 2;
+}
+
+.about, .contact, .skills {
+    height: 680px;
+}
+
+@keyframes fadeIn {
+    from {
         opacity: 0;
     }
-
-    nav {
-        font-size: 18px;
-        background-color: rgb(173, 173, 173);
-        padding: 5px 10px;
-        text-align: center;
-        animation: fadeIn 1.5s ease-in-out forwards;
-        opacity: 0;
-        position: fixed;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        z-index: 1000;
+    to {
+        opacity: 1;
     }
+}
 
-    .home {
-        display: grid;
-        height: 680px;
-        justify-content: center;
-        animation: fadeIn 1.5s ease-in-out forwards;
-        opacity: 0;
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
     }
-
-    .home h1 {
-        font-size: 30px;
-        text-align: center;
-        color: rgb(88, 88, 247);
+    to {
+        transform: translateX(0%);
     }
-
-    .home p {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .home button {
-        font-size: 15px;
-        width: 100px;
-        padding: 5px;
-        border-radius: 40px;
-        border: none;
-        outline: none;
-        background-color: white;
-        transition: all 0.4 ease;
-        width: 300px;
-        
-    }
-
-    .about h1, .contact h1, .skills h1 {
-        font-size: 30px;
-        text-align: center;
-        color: rgb(88, 88, 247);
-    }
-
-    .about ul li, .contact p, .skills p {
-        font-size: 18px;
-        margin-left: 5%;
-        animation:slideIn 1s;
-        line-height: 2;
-    }
-
-    .home, .about, .contact, .skills {
-        height: 680px;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-         }
-         to {
-             opacity: 1;
-         }
-    }
-
-    @keyframes slideIn {
-        from {
-            transform: translateX(-100%);
-        }
-        to {
-            transform: translateX(0%);
-        }
-    }
+}
