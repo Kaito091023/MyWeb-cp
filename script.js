@@ -21,7 +21,7 @@ document.getElementById('scrollButton1').onclick = function () {
 
 document.getElementById('scrollButton2').onclick = function () {
     window.scrollTo({
-        top: 1330,
+        top: 1340,
         behavior: 'smooth'
     })
 };
