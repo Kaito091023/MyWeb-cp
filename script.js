@@ -14,21 +14,21 @@ document.getElementById('scrollButton0').onclick = function () {
 
 document.getElementById('scrollButton1').onclick = function () {
     window.scrollTo({
-        top: document.body.scrollHeight / 2,
+        top: document.body.scrollHeight / 1.5,
         behavior: 'smooth'
     })
 };
 
 document.getElementById('scrollButton2').onclick = function () {
     window.scrollTo({
-        top: document.body.scrollHeight / 3,
+        top: document.body.scrollHeight / 2,
         behavior: 'smooth'
     })
 };
 
 document.getElementById('scrollButton3').onclick = function () {
     window.scrollTo({
-        top: document.body.scrollHeight / 4,
+        top: document.body.scrollHeight / 2.5,
         behavior: 'smooth'
     })
 };
