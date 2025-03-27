@@ -32,10 +32,11 @@ nav {
 
 .home {
     display: grid;
-    height: 600px;
+    height: 550px;
     justify-content: center;
     animation: fadeIn 1.5s ease-in-out forwards;
     opacity: 0;
+    text-align: center;
 }
 
 .home h1 {
@@ -75,7 +76,7 @@ nav {
 }
 
 .about, .contact, .skills {
-    height: 680px;
+    height: 600px;
 }
 
 @keyframes fadeIn {
