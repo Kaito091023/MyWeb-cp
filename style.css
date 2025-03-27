@@ -76,8 +76,16 @@ nav {
     line-height: 2;
 }
 
-.about, .contact, .skills {
-    height: 550px;
+.about {
+    height: 530px
+}
+
+.contact {
+    height: 530px
+}
+
+.skills {
+    height: 530px;
 }
 
 @keyframes fadeIn {
