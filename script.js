@@ -7,28 +7,28 @@ document.getElementById('scrollButton').onclick = function () {
 
 document.getElementById('scrollButton0').onclick = function () {
     window.scrollTo({
-        top: 650,
+        top: 660,
         behavior: 'smooth'
     })
 };
 
 document.getElementById('scrollButton1').onclick = function () {
     window.scrollTo({
-        top: 650,
+        top: 660,
         behavior: 'smooth'
     })
 };
 
 document.getElementById('scrollButton2').onclick = function () {
     window.scrollTo({
-        top: 1300,
+        top: 1320,
         behavior: 'smooth'
     })
 };
 
 document.getElementById('scrollButton3').onclick = function () {
     window.scrollTo({
-        top: 1950,
+        top: 1990,
         behavior: 'smooth'
     })
 };
